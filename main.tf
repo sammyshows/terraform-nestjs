@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "docker" {
-  host = "unix:///var/run/docker.sock"
+  host = "unix:///Users/sammccarthy/.docker/run/docker.sock"
 }
 
 resource "docker_image" "nestjs" {
@@ -19,7 +19,7 @@ resource "docker_image" "nestjs" {
 
 resource "docker_container" "nestjs" {
   name  = "nestjs"
-  image = docker_image.nestjs
+  image = docker_image.nestjs.name
 
   ports {
     internal = 3000
