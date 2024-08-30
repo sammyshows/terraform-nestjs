@@ -1,0 +1,32 @@
+# Terraform State files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Exclude .terraform directory which holds downloaded modules and plugins
+.terraform/
+
+# Terraform plan files
+*.tfplan
+
+# Local environment variables
+terraform.tfvars
+*.tfvars
+
+# Override files to customize variable values for different environments
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# .terraform.lock.hcl file
+.terraform.lock.hcl
+
+# Sensitive data (if applicable)
+secrets.tfvars
+
+# .DS_Store (macOS)
+.DS_Store
+
